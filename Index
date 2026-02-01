@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الخطة التشغيلية لجمعية الماهر 2026</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts - Tajawal -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #1abc9c;
+            --light-bg: #f8f9fa;
+            --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --card-hover-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: var(--light-bg);
+            color: #333;
+            line-height: 1.7;
+        }
+        
+        .header-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 4rem 0;
+            margin-bottom: 3rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cpath fill='%231abc9c' fill-opacity='0.1' d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z'%3E%3C/path%3E%3C/svg%3E");
+            opacity: 0.2;
+        }
+        
+        .page-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .page-subtitle {
+            font-size: 1.3rem;
+            font-weight: 300;
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .kpi-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.8rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--card-shadow);
+            transition: all 0.4s ease;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            border: none;
+        }
+        
+        .kpi-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--card-hover-shadow);
+        }
+        
+        .kpi-card .card-title {
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .kpi-card .card-title i {
+            margin-left: 10px;
+            color: var(--accent-color);
+        }
+        
+        .kpi-card .card-text {
+            color: #555;
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .kpi-card .card-footer {
+            background: transparent;
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+            padding-top: 1rem;
+            margin-top: auto;
+            color: #777;
+            font-size: 0.9rem;
+        }
+        
+        .bg-icon-float {
+            position: absolute;
+            bottom: -20px;
+            left: -20px;
+            font-size: 6rem;
+            color: rgba(26, 188, 156, 0.08);
+            z-index: 1;
+            transition: all 0.5s ease;
+        }
+        
+        .kpi-card:hover .bg-icon-float {
+            transform: scale(1.2) translate(-10px, -10px);
+            color: rgba(26, 188, 156, 0.15);
+        }
+        
+        .department-title {
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 3px solid var(--accent-color);
+            display: inline-block;
+        }
+        
+        .department-section {
+            margin-bottom: 4rem;
+        }
+        
+        .info-badge {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        
+        .timeline-info {
+            background-color: rgba(52, 152, 219, 0.1);
+            border-right: 4px solid var(--secondary-color);
+            padding: 10px 15px;
+            border-radius: 0 8px 8px 0;
+            font-size: 0.9rem;
+            margin-top: 15px;
+        }
+        
+        .conclusion-section {
+            background: linear-gradient(135deg, var(--primary-color), #1a5276);
+            color: white;
+            padding: 4rem 0;
+            margin-top: 4rem;
+            text-align: center;
+        }
+        
+        .conclusion-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+        
+        .conclusion-text {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+        
+        .footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        
+        .nav-pills .nav-link {
+            color: var(--primary-color);
+            font-weight: 500;
+            border-radius: 8px;
+            margin-bottom: 5px;
+            transition: all 0.3s;
+        }
+        
+        .nav-pills .nav-link.active {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+        
+        .nav-pills .nav-link:hover:not(.active) {
+            background-color: rgba(52, 152, 219, 0.1);
+        }
+        
+        @media (max-width: 768px) {
+            .page-title {
+                font-size: 2.2rem;
+            }
+            
+            .page-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .kpi-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- رأس الصفحة -->
+    <header class="header-section">
+        <div class="container">
+            <h1 class="page-title">
+                <i class="fas fa-calendar-alt me-3"></i>الخطة التشغيلية لجمعية الماهر
+            </h1>
+            <p class="page-subtitle">
+                خطة استراتيجية شاملة لتعزيز رسالة الجمعية في تعليم القرآن الكريم وتحفيظه وتجويده، والإرتقاء بمستوى الطلاب والمقرئين في مختلف البرامج القرآنية لعام 2026
+            </p>
+        </div>
+    </header>
+
+    <!-- المحتوى الرئيسي -->
+    <main class="container">
+        <div class="row">
+            <!-- القائمة الجانبية -->
+            <div class="col-lg-3 mb-4">
+                <div class="sticky-top" style="top: 20px;">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0"><i class="fas fa-list me-2"></i>أقسام الخطة</h5>
+                        </div>
+                        <div class="card-body p-3">
+                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <button class="nav-link active" id="v-pills-intro-tab" data-bs-toggle="pill" data-bs-target="#v-pills-intro" type="button" role="tab">مقدمة</button>
+                                <button class="nav-link" id="v-pills-quran-tab" data-bs-toggle="pill" data-bs-target="#v-pills-quran" type="button" role="tab">البرامج القرآنية</button>
+                                <button class="nav-link" id="v-pills-tech-tab" data-bs-toggle="pill" data-bs-target="#v-pills-tech" type="button" role="tab">القسم التقني</button>
+                                <button class="nav-link" id="v-pills-hr-tab" data-bs-toggle="pill" data-bs-target="#v-pills-hr" type="button" role="tab">الموارد البشرية</button>
+                                <button class="nav-link" id="v-pills-finance-tab" data-bs-toggle="pill" data-bs-target="#v-pills-finance" type="button" role="tab">القسم المالي</button>
+                                <button class="nav-link" id="v-pills-services-tab" data-bs-toggle="pill" data-bs-target="#v-pills-services" type="button" role="tab">الخدمات والصيانة</button>
+                                <button class="nav-link" id="v-pills-resources-tab" data-bs-toggle="pill" data-bs-target="#v-pills-resources" type="button" role="tab">تنمية الموارد</button>
+                                <button class="nav-link" id="v-pills-communication-tab" data-bs-toggle="pill" data-bs-target="#v-pills-communication" type="button" role="tab">الاتصال المؤسسي</button>
+                                <button class="nav-link" id="v-pills-partnerships-tab" data-bs-toggle="pill" data-bs-target="#v-pills-partnerships" type="button" role="tab">الشراكات التعليمية</button>
+                                <button class="nav-link" id="v-pills-quality-tab" data-bs-toggle="pill" data-bs-target="#v-pills-quality" type="button" role="tab">التخطيط والجودة</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- محتوى الأقسام -->
+            <div class="col-lg-9">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <!-- مقدمة -->
+                    <div class="tab-pane fade show active" id="v-pills-intro" role="tabpanel">
+                        <div class="department-section">
+                            <h2 class="department-title">مقدمة الخطة التشغيلية</h2>
+                            <div class="row">
+                                <div class="col-md-12 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-info-circle bg-icon-float"></i>
+                                        <h3 class="card-title"><i class="fas fa-bullseye"></i> رؤية الخطة</h3>
+                                        <p class="card-text">
+                                            تهدف الخطة التشغيلية لجمعية الماهر إلى تحقيق التميز في تعليم القرآن الكريم وتحفيظه وتجويده، من خلال تطوير البرامج القرآنية وتعزيز القدرات التعليمية، ورفع كفاءة العمل المؤسسي لتحقيق الأهداف الاستراتيجية للجمعية.
+                                        </p>
+                                        <div class="card-footer">
+                                            <i class="fas fa-calendar me-1"></i> عام 2026
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-book-open bg-icon-float"></i>
+                                        <h3 class="card-title"><i class="fas fa-star"></i> الأهداف الاستراتيجية</h3>
+                                        <p class="card-text">
+                                            - الارتقاء بمهارة تعليم القرآن الكريم<br>
+                                            - تطوير المسابقات القرآنية<br>
+                                            - تحسين العمليات التعليمية<br>
+                                            - تعزيز الكفاءة التنظيمية<br>
+                                            - استقطاب وتطوير الكفاءات البشرية
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-chart-line bg-icon-float"></i>
+                                        <h3 class="card-title"><i class="fas fa-tasks"></i> نطاق الخطة</h3>
+                                        <p class="card-text">
+                                            تشمل الخطة جميع إدارات الجمعية وأقسامها، مع التركيز على البرامج القرآنية الأساسية، وتعزيز البنية التحتية التقنية، وتنمية الموارد المالية، وبناء الشراكات المؤثرة، وتحسين جودة الخدمات المقدمة.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- إدارة البرامج والمشاريع القرآنية -->
+                    <div class="tab-pane fade" id="v-pills-quran" role="tabpanel">
+                        <div class="department-section">
+                            <h2 class="department-title">إدارة البرامج والمشاريع القرآنية</h2>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-quran bg-icon-float"></i>
+                                        <span class="info-badge">برنامج الإقراء</span>
+                                        <h3 class="card-title"><i class="fas fa-microphone"></i> نمذجة برنامج الإقراء</h3>
+                                        <p class="card-text">
+                                            تنظيم دورة برنامج الإقراء من التسجيل والقبول مرورًا بالتشغيل والمتابعة والتقييم، وإنهاء بإجراءات الختم والإجازة القرآنية.
+                                        </p>
+                                        <div class="timeline-info">
+                                            <i class="fas fa-clock me-1"></i> مدة التنفيذ: متغيرة حسب المشروع
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fas fa-user me-1"></i> مسؤول التنفيذ: معاذ السلمي
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-brain bg-icon-float"></i>
+                                        <span class="info-badge">برنامج حفظ المعاني</span>
+                                        <h3 class="card-title"><i class="fas fa-lightbulb"></i> نمذجة برنامج حفظ معاني المفردات</h3>
+                                        <p class="card-text">
+                                            تنظيم دورة برنامج حفظ معاني مفردات القرآن من التسجيل والقبول مرورًا بالتشغيل والمتابعة والتقييم، وإنهاء بإجراءات الختم.
+                                        </p>
+                                        <div class="timeline-info">
+                                            <i class="fas fa-clock me-1"></i> مدة التنفيذ: متغيرة حسب المشروع
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fas fa-user me-1"></i> مسؤول التنفيذ: عبدالله بن معاذ السلمي
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-trophy bg-icon-float"></i>
+                                        <span class="info-badge">برنامج التأهيل للمسابقات</span>
+                                        <h3 class="card-title"><i class="fas fa-award"></i> قبول وتسجيل في برنامج التأهيل للمسابقات</h3>
+                                        <p class="card-text">
+                                            إدارة عمليات استقطاب وقبول وتسجيل الطلاب من خلال الإعلان التعريفي، واستقبال الطلبات وفرزها وتقييمها، واعتماد المقبولين.
+                                        </p>
+                                        <div class="card-footer">
+                                            <i class="fas fa-user me-1"></i> مسؤول التنفيذ: راكان بن علي العجلان
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-graduation-cap bg-icon-float"></i>
+                                        <span class="info-badge">برنامج التجويد النظري</span>
+                                        <h3 class="card-title"><i class="fas fa-book"></i> قبول وتسجيل في برنامج التجويد النظري</h3>
+                                        <p class="card-text">
+                                            إدارة عمليات استقطاب وقبول المستفيدين من خلال الإعلان، واستقبال الطلبات وفرزها وتقييمها، واعتماد القبول النهائي للطلاب.
+                                        </p>
+                                        <div class="card-footer">
+                                            <i class="fas fa-user me-1"></i> مسؤول التنفيذ: إبراهيم بن محمد الرشيد
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- القسم التقني -->
+                    <div class="tab-pane fade" id="v-pills-tech" role="tabpanel">
+                        <div class="department-section">
+                            <h2 class="department-title">القسم التقني</h2>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-cloud bg-icon-float"></i>
+                                        <h3 class="card-title"><i class="fas fa-database"></i> التحول للسحابة المركزية</h3>
+                                        <p class="card-text">
+                                            مشروع يهدف إلى ضبط ومركزية البيانات بنقل الملفات من الأجهزة الشخصية والسحابات إلى المساحة الجديدة، وتنظيمها وتوزيع الصلاحيات بشكل مناسب.
+                                        </p>
+                                        <div class="card-footer">
+                                            <i class="fas fa-user me-1"></i> مسؤول التنفيذ: أسامة كمال
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-robot bg-icon-float"></i>
+                                        <h3 class="card-title"><i class="fas fa-cogs"></i> الإسناد الذكي للمهام</h3>
+                                        <p class="card-text">
+                                            أتمتة توزيع المهام وترحيلها بدقة من خلال تحليل رسائل المشرفين في Telegram بالذكاء الاصطناعي، وتوجيهها عبر n8n للنظام الخارجي.
+                                        </p>
+                                        <div class="card-footer">
+                                            <i class="fas fa-user me-1"></i> مسؤول التنفيذ: أسامة كمال
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-laptop-code bg-icon-float"></i>
+                                        <h3 class="card-title"><i class="fas fa-code"></i> ترقية منصة برنامج الإقراء</h3>
+                                        <p class="card-text">
+                                            ترقية إطار العمل Laravel Filament إلى منصة ترقية وإقراء وتأهيل للإصدار الرابع المستقر والأخير.
+                                        </p>
+                                        <div class="card-footer">
+                                            <i class="fas fa-user me-1"></i> مسؤول التنفيذ: أسامة كمال
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-tools bg-icon-float"></i>
+                                        <h3 class="card-title"><i class="fas fa-wrench"></i> دراسة جدوى نظام الخدمات الموحد</h3>
+                                        <p class="card-text">
+                                            ضبط جودة الخدمات وضمان سرعة الاستجابة من خلال تهيئة أو بناء بوابة ويب تدعم مستوى اتفاقية الخدمة، والتوزيع الآلي للتذاكر.
+                                        </p>
+                                        <div class="card-footer">
+                                            <i class="fas fa-user me-1"></i> مسؤول التنفيذ: أسامة كمال
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- إدارة الموارد البشرية -->
+                    <div class="tab-pane fade" id="v-pills-hr" role="tabpanel">
+                        <div class="department-section">
+                            <h2 class="department-title">إدارة الموارد البشرية</h2>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-users bg-icon-float"></i>
+                                        <h3 class="card-title"><i class="fas fa-user-tie"></i> عمليات إدارة الموارد البشرية</h3>
+                                        <p class="card-text">
+                                            إعداد وتفعيل قوالب وتقارير تشغيلية مرنة تستخدم فعليًا وتُعتمد من مدير الإدارة.
+                                        </p>
+                                        <div class="card-footer">
+                                            <i class="fas fa-user me-1"></i> مسؤول التنفيذ: عبدالرحمن العثيم
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-clipboard-list bg-icon-float"></i>
+                                        <h3 class="card-title"><i class="fas fa-id-card"></i> بناء وإعتماد الأوصاف الوظيفية</h3>
+                                        <p class="card-text">
+                                            حصر الوظائف وتحليل مهامها ووظيفية أوصاف وظيفية جديدة بالتعاون مع إدارات الجمعية والموظفين ومستشار خارجي.
+                                        </p>
+                                        <div class="card-footer">
+                                            <i class="fas fa-user me-1"></i> مسؤول التنفيذ: عبدالله العقلي
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-chart-bar bg-icon-float"></i>
+                                        <h3 class="card-title"><i class="fas fa-chart-pie"></i> بناء وتطبيق نظام تقييم الأداء</h3>
+                                        <p class="card-text">
+                                            صياغة سياسة تقييم الأداء وتحديد معاييره وآلياته وإجراءاته ونماذجه واعتمادها وتطبيقها فعليًا على جميع الموظفين.
+                                        </p>
+                                        <div class="card-footer">
+                                            <i class="fas fa-user me-1"></i> مسؤول التنفيذ: عبدالرحمن العثيم
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-hands-helping bg-icon-float"></i>
+                                        <h3 class="card-title"><i class="fas fa-handshake"></i> بناء إطار إدارة وحدة التطوع</h3>
+                                        <p class="card-text">
+                                            حوكمة وتنظيم وحدة التطوع من خلال بناء تنظيمي إطار متكامل يمتثل للمعيار الوطني للتطوع (إدامة).
+                                        </p>
+                                        <div class="card-footer">
+                                            <i class="fas fa-user me-1"></i> مسؤول التنفيذ: عبدالله العقلي
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- القسم المالي -->
+                    <div class="tab-pane fade" id="v-pills-finance" role="tabpanel">
+                        <div class="department-section">
+                            <h2 class="department-title">القسم المالي</h2>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-money-check-alt bg-icon-float"></i>
+                                        <h3 class="card-title"><i class="fas fa-file-invoice-dollar"></i> الاسترداد الضريبي</h3>
+                                        <p class="card-text">
+                                            استرداد ضريبة المشتريات التي تتكبدها الجمعية من خلال تسجيلها محاسبيًا وتقييدها وجمع فواتيرها ورفعها لهيئة الزكاة والضريبة والجمارك.
+                                        </p>
+                                        <div class="card-footer">
+                                            <i class="fas fa-user me-1"></i> مسؤول التنفيذ: إبراهيم الفوزان
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-balance-scale bg-icon-float"></i>
+                                        <h3 class="card-title"><i class="fas fa-chart-line"></i> معيار السلامة المالية</h3>
+                                        <p class="card-text">
+                                            مراجعة ومعالجة وإعادة احتساب نسب معيار السلامة المالية من خلال مراجعة النسب المالية وضبطها وفق متطلبات المعيار المعتمد.
+                                        </p>
+                                        <div class="card-footer">
+                                            <i class="fas fa-user me-1"></i> مسؤول التنفيذ: إبراهيم الفوزان
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-file-contract bg-icon-float"></i>
+                                        <h3 class="card-title"><i class="fas fa-calendar-check"></i> اعتماد الميزانية السنوية</h3>
+                                        <p class="card-text">
+                                            إعداد واعتماد الميزانية المالية السنوية للعام 2026 من خلال بناء موازنة منبثقة من الخطة التشغيلية ورفعها لصاحب الصلاحية لاعتمادها.
+                                        </p>
+                                        <div class="card-footer">
+                                            <i class="fas fa-user me-1"></i> مسؤول التنفيذ: إبراهيم الفوزان
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-archive bg-icon-float"></i>
+                                        <h3 class="card-title"><i class="fas fa-boxes"></i> أرشفة البيانات والمستندات المالية</h3>
+                                        <p class="card-text">
+                                            تنظيم وأرشفة القيود والمستندات المالية والمحاسبية ورقيًا وسحابيًا من خلال تصنيف الملفات وربط كل قيد محاسبي بمسوغاته.
+                                        </p>
+                                        <div class="card-footer">
+                                            <i class="fas fa-user me-1"></i> مسؤول التنفيذ: إبراهيم الفوزان
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- قسم الخدمات والصيانة -->
+                    <div class="tab-pane fade" id="v-pills-services" role="tabpanel">
+                        <div class="department-section">
+                            <h2 class="department-title">قسم الخدمات والصيانة</h2>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-clipboard-check bg-icon-float"></i>
+                                        <h3 class="card-title"><i class="fas fa-tasks"></i> تنظيم وتوثيق العهدة العينية</h3>
+                                        <p class="card-text">
+                                            حصر العهدة العينية وترتيب بياناتها وتنظيمها وتوثيقها وتسجيلها في سجلات معتمدة.
+                                        </p>
+                                        <div class="card-footer">
+                                            <i class="fas fa-user me-1"></i> مسؤول التنفيذ: عبدالملك الحربي
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-drafting-compass bg-icon-float"></i>
+                                        <h3 class="card-title"><i class="fas fa-ruler-combined"></i> تجهيز المخطط المعماري لقاعة المسابقات</h3>
+                                        <p class="card-text">
+                                            إعداد مخطط معماري لقاعة المسابقات من خلال تحديد وتوزيع المساحات والعناصر المعمارية.
+                                        </p>
+                                        <div class="card-footer">
+                                            <i class="fas fa-user me-1"></i> مسؤول التنفيذ: عبدالملك الحربي
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-tools bg-icon-float"></i>
+                                        <h3 class="card-title"><i class="fas fa-hammer"></i> تنظيم الصيانة الدورية للمبنى الإداري</h3>
+                                        <p class="card-text">
+                                            تنظيم الصيانة الدورية للمبنى الإداري من خلال ترتيب آلية تنفيذ أعمال الصيانة.
+                                        </p>
+                                        <div class="card-footer">
+                                            <i class="fas fa-user me-1"></i> مسؤول التنفيذ: عبدالملك الحربي
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-cogs bg-icon-float"></i>
+                                        <h3 class="card-title"><i class="fas fa-sync-alt"></i> تطوير آلية رفع طلبات المشتريات</h3>
+                                        <p class="card-text">
+                                            تحسين آلية رفع طلبات المشتريات من خلال تنظيم خطوات رفع الطلب وتوضيحها.
+                                        </p>
+                                        <div class="card-footer">
+                                            <i class="fas fa-user me-1"></i> مسؤول التنفيذ: عبدالملك الحربي
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- قسم تنمية الموارد المالية -->
+                    <div class="tab-pane fade" id="v-pills-resources" role="tabpanel">
+                        <div class="department-section">
+                            <h2 class="department-title">قسم تنمية الموارد المالية</h2>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-handshake bg-icon-float"></i>
+                                        <h3 class="card-title"><i class="fas fa-file-signature"></i> وثائق المشاريع المدعومة</h3>
+                                        <p class="card-text">
+                                            مراجعة وإعداد وثائق المشاريع المدعومة السابقة والجديدة من خلال فحص الوثائق القائمة وإعداد الوثائق المطلوبة وجاهزيتها للاستخدام.
+                                        </p>
+                                        <div class="card-footer">
+                                            <i class="fas fa-user me-1"></i> مسؤول التنفيذ: صالح الظويهر / ماجد القويبعي
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-bullhorn bg-icon-float"></i>
+                                        <h3 class="card-title"><i class="fas fa-donate"></i> حملة التبرع في شهر رمضان</h3>
+                                        <p class="card-text">
+                                            الترويج للجمعية في شهر رمضان المبارك وتحفيز العمل الخيري من خلال منجزات الجمعية وأثرها على المجتمع.
+                                        </p>
+                                        <div class="card-footer">
+                                            <i class="fas fa-user me-1"></i> مسؤول التنفيذ: صالح الظويهر / ماجد القويبعي
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-store-alt bg-icon-float"></i>
+                                        <h3 class="card-title"><i class="fas fa-shopping-cart"></i> إقامة معارض تعريفية في الأماكن العامة</h3>
+                                        <p class="card-text">
+                                            إقامة معارض تعريفية في الأماكن العامة مع إتاحة التبرع للزوار، وإتاحة أجهزة التبرع الذاتي وأجهزة نقاط البيع.
+                                        </p>
+                                        <div class="card-footer">
+                                            <i class="fas fa-user me-1"></i> مسؤول التنفيذ: صالح الظويهر / ماجد القويبعي
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-search-dollar bg-icon-float"></i>
+                                        <h3 class="card-title"><i class="fas fa-chart-pie"></i> دراسة جدوى التعاقد مع مؤثر إعلامي</h3>
+                                        <p class="card-text">
+                                            دراسة جدوى فكرة التعاقد والتعامل مع مؤثر إعلامي من خلال تحليل أثر النشر والتفعيل لفرص وحملات الجمعية.
+                                        </p>
+                                        <div class="card-footer">
+                                            <i class="fas fa-user me-1"></i> مسؤول التنفيذ: صالح الظويهر / ماجد القويبعي
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- قسم الاتصال المؤسسي -->
+                    <div class="tab-pane fade" id="v-pills-communication" role="tabpanel">
+                        <div class="department-section">
+                            <h2 class="department-title">قسم الاتصال المؤسسي</h2>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-eye bg-icon-float"></i>
+                                        <h3 class="card-title"><i class="fas fa-chart-bar"></i> رصد التفاعل الإلكتروني</h3>
+                                        <p class="card-text">
+                                            إنشاء قالب لمتابعة المنشورات ولرصد تفاعل المتابعين على منصات التواصل الاجتماعي لحسابات الجمعية، وتحديثه بشكل مستمر.
+                                        </p>
+                                        <div class="card-footer">
+                                            <i class="fas fa-user me-1"></i> مسؤول التنفيذ: المنذر الحميدان
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-newspaper bg-icon-float"></i>
+                                        <h3 class="card-title"><i class="fas fa-bullhorn"></i> نشر المواد الإعلامية</h3>
+                                        <p class="card-text">
+                                            تغطية أخبار الجمعية وختامات الطلاب، وتغطية الفعاليات التعليمية والتدريبية وإطلاق الفرص والمبادرات، ونشر وتوثيق مختارات من تلاوات طلاب الجمعية.
+                                        </p>
+                                        <div class="card-footer">
+                                            <i class="fas fa-user me-1"></i> مسؤول التنفيذ: مالك التلال
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-gifts bg-icon-float"></i>
+                                        <h3 class="card-title"><i class="fas fa-gift"></i> مبادرة "تهادَوا"</h3>
+                                        <p class="card-text">
+                                            إعداد هدايا مبتكرة لزوار الجمعية والداعمين والمؤثرين وكبار المزورين من خلال تحديد كميات الهدايا وتأمينها وتوثيق توزيعها على الفئات المستهدفة.
+                                        </p>
+                                        <div class="card-footer">
+                                            <i class="fas fa-user me-1"></i> مسؤول التنفيذ: المنذر الحميدان
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-video bg-icon-float"></i>
+                                        <h3 class="card-title"><i class="fas fa-film"></i> إنتاج التقارير الدورية</h3>
+                                        <p class="card-text">
+                                            إبراز منجزات الجمعية لجمهورها من خلال تأسيس مسار لجمع البيانات وإخراجها فنياً كصور أو فيديو أو ملفات، عبر تقارير شهرية وربعية وسنوية.
+                                        </p>
+                                        <div class="card-footer">
+                                            <i class="fas fa-user me-1"></i> مسؤول التنفيذ: مالك التلال
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- إدارة الشراكات -->
+                    <div class="tab-pane fade" id="v-pills-partnerships" role="tabpanel">
+                        <div class="department-section">
+                            <h2 class="department-title">إدارة الشراكات التعليمية</h2>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-handshake bg-icon-float"></i>
+                                        <h3 class="card-title"><i class="fas fa-university"></i> الشراكة مع الجهات التعليمية المتخصصة</h3>
+                                        <p class="card-text">
+                                            تقديم برامج الجمعية كبرنامج الحفظ والتثبيت وغيرها من خلال توقيع شراكات تعليمية مع جهات متخصصة.
+                                        </p>
+                                        <div class="card-footer">
+                                            <i class="fas fa-user me-1"></i> مسؤول التنفيذ: محمد العوض
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-home bg-icon-float"></i>
+                                        <h3 class="card-title"><i class="fas fa-hand-holding-heart"></i> الشراكات مع الصناديق العائلية</h3>
+                                        <p class="card-text">
+                                            تشجيع فئات المجتمع على المهارة القرآنية من خلال تنفيذ مسابقة قرآنية بالشراكة مع الصناديق العائلية، والاتصال معها وبناء مسودة الاتفاق والتعاقد.
+                                        </p>
+                                        <div class="card-footer">
+                                            <i class="fas fa-user me-1"></i> مسؤول التنفيذ: محمد العجلان
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-globe bg-icon-float"></i>
+                                        <h3 class="card-title"><i class="fas fa-network-wired"></i> الشراكات مع الجهات غير التعليمية</h3>
+                                        <p class="card-text">
+                                            إبرام شراكات تعليمية وغير تعليمية مع جهات غير تعليمية.
+                                        </p>
+                                        <div class="card-footer">
+                                            <i class="fas fa-user me-1"></i> مسؤول التنفيذ: محمد العوض
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-crown bg-icon-float"></i>
+                                        <h3 class="card-title"><i class="fas fa-star"></i> تفعيل نموذج الامتياز لبرنامج التأهيل للمسابقات القرآنية</h3>
+                                        <p class="card-text">
+                                            تطبيق برنامج التأهيل للمسابقات القرآنية وفق نموذج جمعية ماهر بضوابط محددة من خلال إبرام شراكات بنظام الامتياز مع جهات معينة.
+                                        </p>
+                                        <div class="card-footer">
+                                            <i class="fas fa-user me-1"></i> مسؤول التنفيذ: محمد العوض
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- وحدة التخطيط والجودة -->
+                    <div class="tab-pane fade" id="v-pills-quality" role="tabpanel">
+                        <div class="department-section">
+                            <h2 class="department-title">وحدة التخطيط والجودة</h2>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-chart-pie bg-icon-float"></i>
+                                        <h3 class="card-title"><i class="fas fa-sitemap"></i> دراسة إمكانية تفعيل نظام رافد</h3>
+                                        <p class="card-text">
+                                            تقييم مدى ملاءمة النظام لاحتياج الإدارة مع التنسيق مع الدعم الفني، واستعراض خدمات النظام وربطها باحتياج الإدارة ووحداتها، والخروج بتوصية مناسبة.
+                                        </p>
+                                        <div class="card-footer">
+                                            <i class="fas fa-user me-1"></i> مسؤول التنفيذ: إسماعيل بن علي اليحيى
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-tools bg-icon-float"></i>
+                                        <h3 class="card-title"><i class="fas fa-cogs"></i> تحسين العمليات</h3>
+                                        <p class="card-text">
+                                            رصد العمليات التي تتطلب تحسينًا أو تطويرًا أو حل مشكلة من خلال إنشاء سجل للرصد وتحليل ورصد الحالات ومناقشتها، وإصدار توصيات مناسبة.
+                                        </p>
+                                        <div class="card-footer">
+                                            <i class="fas fa-user me-1"></i> مسؤول التنفيذ: إسماعيل بن علي اليحيى
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-clipboard-list bg-icon-float"></i>
+                                        <h3 class="card-title"><i class="fas fa-tasks"></i> عمليات إدارة البرامج والمشاريع القرآنية</h3>
+                                        <p class="card-text">
+                                            ضبط وتنظيم عمليات إدارة البرامج والمشاريع القرآنية ووحداتها من خلال إعداد وتفعيل قوالب وتقارير مرنة تشغيلية.
+                                        </p>
+                                        <div class="card-footer">
+                                            <i class="fas fa-user me-1"></i> مسؤول التنفيذ: إسماعيل بن علي اليحيى
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-4">
+                                    <div class="kpi-card">
+                                        <i class="fas fa-award bg-icon-float"></i>
+                                        <h3 class="card-title"><i class="fas fa-medal"></i> تعزيز الكفاءة التنظيمية</h3>
+                                        <p class="card-text">
+                                            العمل على تحسين وتطوير الأنظمة واللوائح والأدلة الإجرائية لتعزيز كفاءة العمل المؤسسي وضمان تحقيق أهداف الجمعية الاستراتيجية.
+                                        </p>
+                                        <div class="card-footer">
+                                            <i class="fas fa-user me-1"></i> وحدة التخطيط والجودة
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- الخاتمة -->
+    <section class="conclusion-section">
+        <div class="container">
+            <h2 class="conclusion-title">بداية عام الماهر 2026</h2>
+            <p class="conclusion-text">
+                مع بداية عام 2026، تطلق جمعية الماهر خطتها التشغيلية الطموحة التي تهدف إلى تعزيز مكانة الجمعية كمرجعية في تعليم القرآن الكريم وتحفيظه. نعمل معًا لتحقيق رؤيتنا في إعداد جيل متميز في القرآن الكريم، مستندين إلى أسس منهجية متكاقة، وموارد بشرية مؤهلة، وشراكات فاعلة، وتقنيات حديثة تخدم أهدافنا النبيلة.
+            </p>
+            <div class="mt-4">
+                <i class="fas fa-quran fa-3x" style="opacity: 0.8;"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+        <div class="container">
+            <p>جمعية الماهر لتحفيظ القرآن الكريم - الخطة التشغيلية لعام 2026</p>
+            <p class="mb-0">جميع الحقوق محفوظة © 2026</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // تفعيل التبويبات عند النقر
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    // إزالة النشاط من جميع الروابط
+                    navLinks.forEach(item => item.classList.remove('active'));
+                    
+                    // إضافة النشاط للرابط المحدد
+                    this.classList.add('active');
+                });
+            });
+            
+            // إضافة تأثيرات إضافية للكروت عند التمرير
+            const kpiCards = document.querySelectorAll('.kpi-card');
+            
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = "1";
+                        entry.target.style.transform = "translateY(0)";
+                    }
+                });
+            }, observerOptions);
+            
+            kpiCards.forEach(card => {
+                card.style.opacity = "0";
+                card.style.transform = "translateY(20px)";
+                card.style.transition = "opacity 0.5s ease, transform 0.5s ease";
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+</html>
